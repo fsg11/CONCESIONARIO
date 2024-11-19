@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="834.0" prefWidth="1304.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.ViewController.VehiculoGasolinaDieselVC">
+   <children>
+      <Label layoutX="40.0" layoutY="95.0" prefHeight="27.0" prefWidth="72.0" text="Placa:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="39.0" layoutY="148.0" text="Marca:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="35.0" layoutY="195.0" text="Modelo">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="36.0" layoutY="240.0" text="Cambios:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="28.0" layoutY="279.0" prefHeight="27.0" prefWidth="150.0" text="Velocidad Maxima:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="37.0" layoutY="319.0" text="Cilindraje:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <ComboBox fx:id="cmbx_tipoTransmision" layoutX="34.0" layoutY="377.0" prefWidth="150.0" promptText="Transimsion" />
+      <ComboBox fx:id="cmbx_GD" layoutX="34.0" layoutY="424.0" prefWidth="150.0" promptText="Gasolina o Diesel" />
+      <CheckBox fx:id="too_nuevoGD" layoutX="37.0" layoutY="466.0" mnemonicParsing="false" text="Nuevo" />
+      <ScrollPane layoutX="451.0" layoutY="93.0" prefHeight="374.0" prefWidth="473.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="542.0" prefWidth="479.0">
+               <children>
+                  <Label layoutX="26.0" layoutY="27.0" text="N° ejes:" visible="false" />
+                  <TextField fx:id="txt_ejesGD" layoutX="93.0" layoutY="22.0" visible="false" />
+                  <Label layoutX="26.0" layoutY="73.0" text="Capacidad Carga:" visible="false" />
+                  <CheckBox fx:id="ckbx_ABSgd" layoutX="26.0" layoutY="117.0" mnemonicParsing="false" text="ABS" visible="false" />
+                  <CheckBox fx:id="ckbx_AireAcondicionado" layoutX="26.0" layoutY="150.0" mnemonicParsing="false" text="Aire Acondicionado" visible="false" />
+                  <CheckBox fx:id="ckbx_FrenosAireGD" layoutX="26.0" layoutY="185.0" mnemonicParsing="false" text="Frenos de aire" visible="false" />
+                  <Label layoutX="26.0" layoutY="261.0" text="N° Pasajeros: " visible="false" />
+                  <TextField fx:id="txt_psajerosGD" layoutX="142.0" layoutY="256.0" visible="false" />
+                  <Label layoutX="26.0" layoutY="308.0" text="N° de bolsas de aire:" visible="false" />
+                  <TextField fx:id="txt_BolsasAireGD" layoutX="176.0" layoutY="303.0" visible="false" />
+                  <Label layoutX="29.0" layoutY="345.0" text="N° caballos de fuerza:" visible="false" />
+                  <TextField fx:id="txt_CaballosFuerzaGD" layoutX="187.0" layoutY="340.0" visible="false" />
+                  <Label layoutX="26.0" layoutY="380.0" text="N° puertas: " visible="false" />
+                  <TextField fx:id="txt_PuertasGD" layoutX="173.0" layoutY="375.0" visible="false" />
+                  <Label layoutX="26.0" layoutY="423.0" text="Tiempo de 0-100 en segundos:" visible="false" />
+                  <TextField fx:id="txt_TiempoGD" layoutX="258.0" layoutY="418.0" visible="false" />
+                  <CheckBox layoutX="329.0" layoutY="27.0" mnemonicParsing="false" text="Camara reversa" visible="false" />
+                  <TextField fx:id="txt_CapacidadCargaGD" layoutX="165.0" layoutY="68.0" visible="false" />
+                  <ComboBox fx:id="cmbx_TipoCamionGD" layoutX="26.0" layoutY="214.0" prefWidth="150.0" promptText="Tipo Camion" visible="false" />
+                  <CheckBox fx:id="ckbx_4x4GD" layoutX="332.0" layoutY="117.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="62.0" text="4x4" visible="false" />
+                  <Label layoutX="26.0" layoutY="94.0" text="Capacidad caja carga:" visible="false" />
+                  <TextField fx:id="txt_CajaCargaGD" layoutX="176.0" layoutY="100.0" visible="false" />
+                  <CheckBox fx:id="ckbx_VelocidadCruGD" layoutX="332.0" layoutY="150.0" mnemonicParsing="false" text="Velocidad Crucero" visible="false" />
+                  <CheckBox fx:id="ckbx_SensorColision" layoutX="332.0" layoutY="185.0" mnemonicParsing="false" text="Sensores de colision" visible="false" />
+                  <CheckBox fx:id="ckbx_SensorTrafico" layoutX="332.0" layoutY="219.0" mnemonicParsing="false" text="Sensores de trafico cruzado" visible="false" />
+                  <CheckBox fx:id="ckbx_APCgd" layoutX="332.0" layoutY="251.0" mnemonicParsing="false" text="Asistencia de permanencia de carril" visible="false" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <TextField fx:id="txt_placaGD" layoutX="185.0" layoutY="93.0">
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </TextField>
+      <TextField fx:id="txt_MarcaGD" layoutX="185.0" layoutY="146.0" />
+      <TextField fx:id="txt_ModeloGD" layoutX="185.0" layoutY="193.0" />
+      <TextField fx:id="txt_CambiosGD" layoutX="185.0" layoutY="238.0" />
+      <TextField fx:id="txt_VelocidadMaxGD" layoutX="185.0" layoutY="277.0" />
+      <TextField fx:id="txt_CilindrajeGD" layoutX="185.0" layoutY="317.0" prefHeight="31.0" prefWidth="186.0" />
+      <Label layoutX="603.0" layoutY="14.0" text="Vehiculo Gasolina">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbx_TipoVehiculo" layoutX="221.0" layoutY="393.0" prefWidth="150.0" promptText="Tipo Vehiculo" />
+      <Button fx:id="btt_EliminarGD" layoutX="1033.0" layoutY="317.0" mnemonicParsing="false" onAction="#EliminarVehiculoGD" prefHeight="31.0" prefWidth="186.0" text="Eliminar" />
+      <Button fx:id="btt_agregrarGD" layoutX="1033.0" layoutY="146.0" mnemonicParsing="false" onAction="#AgregarVehiculoGD" prefHeight="31.0" prefWidth="186.0" text="Agregar" />
+      <Button fx:id="btt_ActualizarGD" layoutX="1033.0" layoutY="225.0" mnemonicParsing="false" onAction="#ActualizarVehiculoGD" prefHeight="31.0" prefWidth="186.0" text="Actualizar" />
+      <Button fx:id="btt_limpiarGD" layoutX="1033.0" layoutY="409.0" mnemonicParsing="false" onAction="#LimpiarGD" prefHeight="31.0" prefWidth="186.0" text="Button" />
+      <ScrollPane layoutY="498.0" prefHeight="336.0" prefWidth="1304.0">
+         <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="339.0" prefWidth="1311.0">
+               <children>
+                  <TableView fx:id="tb_vehiculosGD" layoutY="1.0" prefHeight="337.0" prefWidth="1304.0" tableMenuButtonVisible="true">
+                    <columns>
+                      <TableColumn fx:id="tbc_PlacaGD" prefWidth="75.0" text="Placa" />
+                      <TableColumn fx:id="tbc_MarcaGD" prefWidth="75.0" text="Marca" />
+                        <TableColumn fx:id="tbc_ModeloGD" prefWidth="75.0" text="Modelo" />
+                        <TableColumn fx:id="tbc_CambiosGD" prefWidth="75.0" text="Cambios" />
+                        <TableColumn fx:id="tbc_VelocidadmaxGD" prefWidth="75.0" text="Velocidad Maxima" />
+                        <TableColumn fx:id="tbc_cilindrajeGD" prefWidth="75.0" text="Cilindraje" />
+                        <TableColumn fx:id="tbc_transmisionGD" prefWidth="75.0" text="Transmision" />
+                        <TableColumn fx:id="tbc_combustile" prefWidth="75.0" text="Combustible" />
+                        <TableColumn fx:id="tbc_nuevoGD" prefWidth="75.0" text="Nuevo" />
+                        <TableColumn fx:id="tbc_TipoVheiculoGD" prefWidth="75.0" text="Vehiculo" />
+                        <TableColumn fx:id="tbc_ejesGD" prefWidth="75.0" text="N° ejes" />
+                        <TableColumn fx:id="tbc_CapacidadCarga" prefWidth="75.0" text="Capacidad Carga" />
+                        <TableColumn fx:id="tbc_ABSgd" prefWidth="75.0" text="ABS" />
+                        <TableColumn fx:id="tbc_aireAcondionadoGD" prefWidth="75.0" text="Aire Acondicionado" />
+                        <TableColumn fx:id="tbc_pasajerosGD" prefWidth="75.0" text="N° pasajeros" />
+                        <TableColumn fx:id="tbc_bolsasGD" prefWidth="75.0" text="N° bolsas aire" />
+                        <TableColumn fx:id="tbc_caballosGD" prefWidth="75.0" text="N° caballos fuerza" />
+                        <TableColumn fx:id="tbc_puertas" prefWidth="75.0" text="N° puertas" />
+                        <TableColumn fx:id="tbc_tiempoGD" prefWidth="75.0" text="Tiempo 0-100" />
+                        <TableColumn fx:id="tbc_CamaraReversaGD" prefWidth="75.0" text="Camara reversa" />
+                        <TableColumn fx:id="tbc_TipoCamionGD" prefWidth="75.0" text="Tipo Camion" />
+                        <TableColumn fx:id="tbc_cajaCargaGD" prefWidth="75.0" text="caja carga" />
+                        <TableColumn fx:id="tbc_VelocidadcruGD" prefWidth="75.0" text="Velocidad crucero" />
+                        <TableColumn fx:id="tbc_SensorColisonGD" prefWidth="75.0" text="S colision" />
+                        <TableColumn fx:id="tbc_SensorTraficoGD" prefWidth="75.0" text="S trafico" />
+                        <TableColumn fx:id="tbc_APCgd" prefWidth="75.0" text="APC" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</Pane>

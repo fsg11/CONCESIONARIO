@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="898.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="238.0" layoutY="51.0" prefHeight="44.0" prefWidth="258.0" text="Gestion Clientes " textFill="#14a2e3">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNombre" layoutX="43.0" layoutY="142.0" prefHeight="23.0" prefWidth="71.0" text="Nombre:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblContraseñaCorreo" layoutX="21.0" layoutY="419.0" text="Contraseña Correo:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCorreo" layoutX="46.0" layoutY="360.0" text="Correo:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblEdad" layoutX="52.0" layoutY="308.0" text="Edad:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRespuestaVerficacion" layoutX="14.0" layoutY="467.0" text="Respuesta Verficacion:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPreguntaSeguridad" layoutX="369.0" layoutY="199.0" text="Pregunta de Seguridad:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblApellido" layoutX="39.0" layoutY="199.0" text="Apellidos:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCedula" layoutX="44.0" layoutY="257.0" text="Cedula:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbxPreguntaSeguridad" layoutX="384.0" layoutY="255.0" prefWidth="150.0" promptText="Pregunta" />
+      <TextField fx:id="txtNombre" layoutX="143.0" layoutY="140.0" />
+      <TextField fx:id="txtApellido" layoutX="143.0" layoutY="197.0" />
+      <TextField fx:id="txtCedula" layoutX="143.0" layoutY="255.0" />
+      <TextField fx:id="txtEdad" layoutX="143.0" layoutY="306.0" />
+      <TextField fx:id="txtCorreo" layoutX="143.0" layoutY="358.0" />
+      <TextField fx:id="txtContraseñaCorreo" layoutX="208.0" layoutY="417.0" />
+      <TextField fx:id="txtRespuestaVerficacion" layoutX="210.0" layoutY="465.0" />
+      <TableView fx:id="tbClientes" layoutX="29.0" layoutY="579.0" prefHeight="222.0" prefWidth="634.0">
+        <columns>
+          <TableColumn fx:id="tbcNombre" prefWidth="75.0" text="Nombre" />
+          <TableColumn fx:id="tbcApellido" prefWidth="75.0" text="Apellidos" />
+            <TableColumn fx:id="tbcCedula" prefWidth="75.0" text="Cedula" />
+            <TableColumn fx:id="tbcEdad" prefWidth="75.0" text="Edad" />
+            <TableColumn fx:id="tbcCorreo" prefWidth="75.0" text="Correo" />
+            <TableColumn fx:id="tbcContraseñaCorreo" prefWidth="75.0" text="Contraseña" />
+            <TableColumn fx:id="tbcRespuestaVerificacion" prefWidth="183.0" text="Respuesta Verificacion" />
+        </columns>
+      </TableView>
+      <Separator layoutX="4.0" layoutY="551.0" prefHeight="8.0" prefWidth="691.0" />
+      <Button fx:id="bttAgregarCliente" layoutX="498.0" layoutY="431.0" mnemonicParsing="false" onAction="#agregarCliente" prefHeight="38.0" prefWidth="103.0" text="Agregar Cliente" />
+      <Button fx:id="bttModificarCliente" layoutX="496.0" layoutY="492.0" mnemonicParsing="false" onAction="#modificarCliente" prefHeight="38.0" prefWidth="111.0" text="Modificar Cliente" />
+      <Button fx:id="bttEliminar" layoutX="376.0" layoutY="827.0" mnemonicParsing="false" onAction="#eliminarCliente" prefHeight="38.0" prefWidth="124.0" text="Eliminar Cliente" />
+      <Button fx:id="bttLimpiar" layoutX="203.0" layoutY="827.0" mnemonicParsing="false" onAction="#limpiar" prefHeight="38.0" prefWidth="71.0" text="Limpiar" />
+   </children>
+</AnchorPane>
